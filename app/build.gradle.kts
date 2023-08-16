@@ -59,6 +59,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -72,5 +73,31 @@ dependencies {
     implementation("io.coil-kt:coil-gif:2.4.0")
     implementation("io.coil-kt:coil-compose:2.2.2")
 
+    // ex003_youtube_player
+    implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0")
+
+    // ex004_exoplayer
+    val media3Version by extra { "1.1.0" }
+    implementation("androidx.media3:media3-exoplayer:$media3Version") // For media playback using ExoPlayer
+    implementation("androidx.media3:media3-exoplayer-dash:$media3Version") // For DASH playback support with ExoPlayer
+    implementation("androidx.media3:media3-exoplayer-hls:$media3Version") // For HLS playback support with ExoPlayer
+    implementation("androidx.media3:media3-exoplayer-rtsp:$media3Version") // For RTSP playback support with ExoPlayer
+    implementation("androidx.media3:media3-exoplayer-ima:$media3Version") // For ad insertion using the Interactive Media Ads SDK with ExoPlayer
+    implementation("androidx.media3:media3-datasource-cronet:$media3Version") // For loading data using the Cronet network stack
+    implementation("androidx.media3:media3-datasource-okhttp:$media3Version") // For loading data using the OkHttp network stack
+    implementation("androidx.media3:media3-datasource-rtmp:$media3Version") // For loading data using librtmp
+    implementation("androidx.media3:media3-ui:$media3Version") // For building media playback UIs
+    implementation("androidx.media3:media3-ui-leanback:$media3Version") // For building media playback UIs for Android TV using the Jetpack Leanback library
+    implementation("androidx.media3:media3-session:$media3Version") // For exposing and controlling media sessions
+    implementation("androidx.media3:media3-extractor:$media3Version") // For extracting data from media containers
+    implementation("androidx.media3:media3-cast:$media3Version") // For integrating with Cast
+    implementation("androidx.media3:media3-transformer:$media3Version") // For transforming media files
+    implementation("androidx.media3:media3-test-utils:$media3Version") // Utilities for testing media components (including ExoPlayer components)
+    implementation("androidx.media3:media3-database:$media3Version") // Common functionality for media database components
+    implementation("androidx.media3:media3-decoder:$media3Version") // Common functionality for media decoders
+    implementation("androidx.media3:media3-datasource:$media3Version") // Common functionality for loading data
+    implementation("androidx.media3:media3-common:$media3Version") // Common functionality used across multiple media libraries
+    implementation("androidx.media3:media3-exoplayer-workmanager:$media3Version") // For scheduling background operations using Jetpack Work's WorkManager with ExoPlayer
+    implementation("androidx.media3:media3-test-utils-robolectric:$media3Version") // Utilities for testing media components (including ExoPlayer components) via Robolectric
 
 }
