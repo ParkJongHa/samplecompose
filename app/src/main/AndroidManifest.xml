@@ -28,7 +28,9 @@
 
         <activity android:name=".ex001_gif.GifActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex002_variable_hold.VariableHoldActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
-
+        <activity android:name=".ex003_youtube_player.YoutubePlayerActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
+        <activity android:name=".ex004_exoplayer.ExoPlayerActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
+        <activity android:name=".ex005_image.ImageActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
 
 
     </application>
