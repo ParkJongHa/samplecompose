@@ -20,6 +20,7 @@ import com.example.myapplication.ex002_variable_hold.VariableHoldActivity
 import com.example.myapplication.ex003_youtube_player.YoutubePlayerActivity
 import com.example.myapplication.ex004_exoplayer.ExoPlayerActivity
 import com.example.myapplication.ex005_image.ImageActivity
+import com.example.myapplication.ex006_slide.SlideActivity
 import kotlin.reflect.KClass
 
 class MainActivity : ComponentActivity() {
@@ -43,12 +44,13 @@ fun ActivityList() {
         Modifier
             .fillMaxSize()
             .padding(start = 5.dp, end = 5.dp)) {
-        item{
+        item {
             GifActivity::class.StartBtn()
             VariableHoldActivity::class.StartBtn()
             YoutubePlayerActivity::class.StartBtn()
             ExoPlayerActivity::class.StartBtn()
             ImageActivity::class.StartBtn()
+            SlideActivity::class.StartBtn()
         }
     }
 }
