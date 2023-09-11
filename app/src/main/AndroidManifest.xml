@@ -31,6 +31,7 @@
         <activity android:name=".ex003_youtube_player.YoutubePlayerActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex004_exoplayer.ExoPlayerActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex005_image.ImageActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
+        <activity android:name=".ex006_slide.SlideActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
 
 
     </application>
