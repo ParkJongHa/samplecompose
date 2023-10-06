@@ -3,6 +3,137 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <!--    <uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.sec.android.app.sbrowser.permission.READ_VIDEO_HISTORY" />
+    <uses-permission android:name="com.sec.android.app.sbrowser.permission.QUICKACCESS" />
+    <uses-permission android:name="com.sec.android.app.sbrowser.permission.READ_MOST_VISITED_SITES" />
+    <uses-permission android:name="com.samsung.android.scloud.sync.permission.READ" />
+    <uses-permission android:name="com.sec.android.app.sbrowser.permission.HANDOFF_APP_DATA" />
+
+
+
+
+
+
+
+    <!--    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="ProtectedPermissions"/>-->
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--    <uses-permission android:name="READ_PHONE_NUMBERS" />-->
+
+    <!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!--    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />-->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+
+
+
+    <!--    <uses-permission android:name="READ_PHONE_STATE"-->
+    <!--        android:maxSdkVersion="29" />-->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" android:required="false"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <!--    <uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.samsung.android.providers.media.WRITE"/>
+    <uses-permission android:name="com.msc.openprovider.OpenContentProvider.READ_CONTENT"/>
+    <uses-permission android:name="com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.mcfds.permission.USE_CONTINUITY_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.app.deepsky.donation.provider.permission.DONATE_ACTION"/>
+    <uses-permission android:name="com.samsung.android.app.deepsky.feedback.provider.permission.SUBMIT_FEEDBACK"/>
+    <permission android:name="com.android.contentprovider.READ_DATABASE" android:protectionLevel="normal"/>
+    <permission android:name="com.android.contentprovider.WRITE_DATABASE" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.android.contentprovider.READ_DATABASE"/>
+    <uses-permission android:name="com.android.contentprovider.WRITE_DATABASE"/>
+
+
+    <!--    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="ProtectedPermissions"/>-->
+
+    <!--    <uses-permission-->
+    <!--        android:name="android.permission.PACKAGE_USAGE_STATS"-->
+    <!--        tools:ignore="ProtectedPermissions" />-->
+
+    <!--    <uses-permission android:name="READ_PHONE_NUMBERS" />-->
+
+    <!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!--    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+    <!--    <uses-permission android:name="android.permission.GET_TASKS" />-->
+
+    <!--    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />-->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!--    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>-->
+
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="ANDROID.PERMISSION.WRITE_USER_DICTIONARY"/>
+
+    <uses-permission android:name="com.sec.android.app.sbrowser.permission.READ_MOST_VISITED_SITES"/>
+
+
+
+
+
 
     <application
         android:allowBackup="true"
@@ -32,7 +163,7 @@
         <activity android:name=".ex004_exoplayer.ExoPlayerActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex005_image.ImageActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex006_slide.SlideActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
-
+        <activity android:name=".ex007_content_provider_resolver.ContentProviderResolverActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
 
     </application>
 

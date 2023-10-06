@@ -21,6 +21,7 @@ import com.example.myapplication.ex003_youtube_player.YoutubePlayerActivity
 import com.example.myapplication.ex004_exoplayer.ExoPlayerActivity
 import com.example.myapplication.ex005_image.ImageActivity
 import com.example.myapplication.ex006_slide.SlideActivity
+import com.example.myapplication.ex007_content_provider_resolver.ContentProviderResolverActivity
 import kotlin.reflect.KClass
 
 class MainActivity : ComponentActivity() {
@@ -45,6 +46,7 @@ fun ActivityList() {
             .fillMaxSize()
             .padding(start = 5.dp, end = 5.dp)) {
         item {
+            ContentProviderResolverActivity::class.StartBtn()
             GifActivity::class.StartBtn()
             VariableHoldActivity::class.StartBtn()
             YoutubePlayerActivity::class.StartBtn()
@@ -59,7 +61,12 @@ fun ActivityList() {
 fun KClass<*>.StartBtn() {
     val context = LocalContext.current
 
-    Button(onClick = {context.startActivity(Intent(context, this.java))}
+    Button(onClick = {
+        context.startActivity(Intent(context, this.java)
+            .addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
+        )
+
+    }
     ) {
         Text(this@StartBtn.simpleName!!)
     }
