@@ -164,6 +164,7 @@
         <activity android:name=".ex005_image.ImageActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex006_slide.SlideActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex007_content_provider_resolver.ContentProviderResolverActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
+        <activity android:name=".ex008_ktor.KtorActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
 
     </application>
 

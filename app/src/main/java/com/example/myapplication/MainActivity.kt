@@ -22,6 +22,7 @@ import com.example.myapplication.ex004_exoplayer.ExoPlayerActivity
 import com.example.myapplication.ex005_image.ImageActivity
 import com.example.myapplication.ex006_slide.SlideActivity
 import com.example.myapplication.ex007_content_provider_resolver.ContentProviderResolverActivity
+import com.example.myapplication.ex008_ktor.KtorActivity
 import kotlin.reflect.KClass
 
 class MainActivity : ComponentActivity() {
@@ -53,6 +54,7 @@ fun ActivityList() {
             ExoPlayerActivity::class.StartBtn()
             ImageActivity::class.StartBtn()
             SlideActivity::class.StartBtn()
+            KtorActivity::class.StartBtn()
         }
     }
 }

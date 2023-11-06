@@ -101,4 +101,8 @@ dependencies {
     implementation("androidx.media3:media3-exoplayer-workmanager:$media3Version") // For scheduling background operations using Jetpack Work's WorkManager with ExoPlayer
     implementation("androidx.media3:media3-test-utils-robolectric:$media3Version") // Utilities for testing media components (including ExoPlayer components) via Robolectric
 
+    implementation("io.ktor:ktor-client-core:2.3.5")
+    implementation("io.ktor:ktor-client-cio:2.3.5")
+
+    implementation("com.google.code.gson:gson:2.10.1")
 }
