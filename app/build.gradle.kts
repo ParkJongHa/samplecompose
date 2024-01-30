@@ -30,17 +30,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.8" // https://developer.android.com/jetpack/androidx/releases/compose-kotlin
     }
     packaging {
         resources {
@@ -52,15 +52,15 @@ android {
 dependencies {
     // default
     implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.activity:activity-compose:1.8.2")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.compose.ui:ui-unit-android:1.5.4")
+    implementation("androidx.compose.ui:ui-unit-android:1.6.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -78,7 +78,7 @@ dependencies {
     implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0")
 
     // ex004_exoplayer
-    val media3Version by extra { "1.1.1" }
+    val media3Version by extra { "1.2.1" }
     implementation("androidx.media3:media3-exoplayer:$media3Version") // For media playback using ExoPlayer
     implementation("androidx.media3:media3-exoplayer-dash:$media3Version") // For DASH playback support with ExoPlayer
     implementation("androidx.media3:media3-exoplayer-hls:$media3Version") // For HLS playback support with ExoPlayer
@@ -101,8 +101,15 @@ dependencies {
     implementation("androidx.media3:media3-exoplayer-workmanager:$media3Version") // For scheduling background operations using Jetpack Work's WorkManager with ExoPlayer
     implementation("androidx.media3:media3-test-utils-robolectric:$media3Version") // Utilities for testing media components (including ExoPlayer components) via Robolectric
 
-    implementation("io.ktor:ktor-client-core:2.3.5")
-    implementation("io.ktor:ktor-client-cio:2.3.5")
+    // ktor(네트워크)
+    val ktorVersion = "2.3.7"
+    implementation("io.ktor:ktor-client-android:$ktorVersion")
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-cio:$ktorVersion")
+    implementation("io.ktor:ktor-client-serialization:$ktorVersion")
+    implementation("io.ktor:ktor-client-logging:$ktorVersion")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
     implementation("com.google.code.gson:gson:2.10.1")
 }
