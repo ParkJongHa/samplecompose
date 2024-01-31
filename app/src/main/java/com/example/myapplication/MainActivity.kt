@@ -23,6 +23,8 @@ import com.example.myapplication.ex005_image.ImageActivity
 import com.example.myapplication.ex006_slide.SlideActivity
 import com.example.myapplication.ex007_content_provider_resolver.ContentProviderResolverActivity
 import com.example.myapplication.ex008_ktor.KtorActivity
+import com.example.myapplication.ex010_biometric_prompt.BiometricPromptActivity
+import com.example.myapplication.ex011_sendbroadcast.SendBroadCastActivity
 import kotlin.reflect.KClass
 
 class MainActivity : ComponentActivity() {
@@ -55,6 +57,8 @@ fun ActivityList() {
             ImageActivity::class.StartBtn()
             SlideActivity::class.StartBtn()
             KtorActivity::class.StartBtn()
+            BiometricPromptActivity::class.StartBtn()
+            SendBroadCastActivity::class.StartBtn()
         }
     }
 }

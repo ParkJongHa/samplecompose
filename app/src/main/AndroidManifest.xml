@@ -27,6 +27,7 @@
     <uses-permission android:name="com.sec.android.app.sbrowser.permission.HANDOFF_APP_DATA" />
 
 
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
 
 
@@ -34,9 +35,7 @@
 
     <!--    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="ProtectedPermissions"/>-->
 
-    <uses-permission
-        android:name="android.permission.PACKAGE_USAGE_STATS"
-        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
 
     <!--    <uses-permission android:name="READ_PHONE_NUMBERS" />-->
 
@@ -48,13 +47,9 @@
     <!--    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />-->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 
@@ -65,7 +60,6 @@
 
     <!--    <uses-permission android:name="READ_PHONE_STATE"-->
     <!--        android:maxSdkVersion="29" />-->
-    <uses-permission android:name="android.permission.USE_FINGERPRINT" android:required="false"/>
     <uses-permission android:name="android.permission.REORDER_TASKS" />
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
 
@@ -99,10 +93,6 @@
 
     <!--    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="ProtectedPermissions"/>-->
 
-    <!--    <uses-permission-->
-    <!--        android:name="android.permission.PACKAGE_USAGE_STATS"-->
-    <!--        tools:ignore="ProtectedPermissions" />-->
-
     <!--    <uses-permission android:name="READ_PHONE_NUMBERS" />-->
 
     <!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
@@ -111,14 +101,10 @@
     <!--    <uses-permission android:name="android.permission.GET_TASKS" />-->
 
     <!--    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />-->
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <!--    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>-->
@@ -165,6 +151,7 @@
         <activity android:name=".ex006_slide.SlideActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex007_content_provider_resolver.ContentProviderResolverActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
         <activity android:name=".ex008_ktor.KtorActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
+        <activity android:name=".ex011_sendbroadcast.SendBroadCastActivity" android:configChanges="keyboard|orientation" android:screenOrientation="unspecified" />
 
     </application>
 
